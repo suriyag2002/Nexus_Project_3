@@ -1,0 +1,46 @@
+/* Navbar.css */
+@font-face {
+  font-family: 'San Francisco';
+  src: url('../assets/San-Francisco/San--Francisco/otf/SFNSDisplay-Semibold.otf') format('opentype'); /* Adjust the path as needed */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px;
+  font-family: 'San Francisco', sans-serif; /* Use the San Francisco font */
+}
+
+nav img {
+  margin-right: 20px; /* Space on the right of the logo */
+  margin-left: 20px; /* Space on the left of the logo */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 15px; /* Default margin between navigation links */
+}
+
+nav a:first-child {
+  margin-left: 0; /* No margin on the left of the first link on desktop */
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  nav img {
+    margin-right: 0; /* Remove right margin on logo */
+    margin-bottom: 10px; /* Space below the logo */
+  }
+
+  nav a {
+    margin: 5px 0; /* Vertical margin between each navigation link */
+  }
+}

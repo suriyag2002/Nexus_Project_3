@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  /* Rest of your existing styles */
+  .home-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .content {
+    text-align: left;
+  }
+  
+  .content h2 {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .content h3 {
+    font-size: 2.5rem;
+  }
+  
+  .image-container {
+    text-align: right;
+  }
+  
+  .brand-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    animation: moveRightLeft 10s linear infinite; /* Adjust animation properties as needed */
+    overflow: hidden; /* Hide overflow if logos exceed container width */
+  }
+  
+  .brand-logo {
+    width: 150px; /* Set specific width */
+    height: 80px; /* Set specific height */
+  }
+  
+  @keyframes moveRightLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
